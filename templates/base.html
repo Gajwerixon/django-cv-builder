@@ -1,24 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        
-        <title>
-            {% block title %}
-            CV Builder
-            {% endblock %}
-        </title>
+        <title> {% block title %} CV Builder {% endblock %} </title>
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
     </head>
 
     <body>
-        <nav>
-            <h2>CV Builder</h2>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">CV Builder</a>
+
+                <div class="nav-links">
+                    <a href="#" class="btn-primary">Login</a>
+                    <a href="#" class="btn-secondary">Get Started</a>
+                </div>
+            
+            </div>
         </nav>
 
-        <main>
-            {% block content %}
-
-            {% endblock %}
+        <main class="container">
+            {% block content %} {% endblock %}
         </main>
     </body>
 </html>
