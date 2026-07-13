@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extra_css%}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="hero">
+        <h1>
+            Create your professional CV
+        </h1>
+
+        <p>
+            Create, customize, and download your professional CV in minutes.
+        </p>
+
+        <a href="#" class="btn-primary">Create CV</a>
+    </div>
+
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="" alt="Easy to use">
+                <p>Easy to Use</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="" alt="Beatiful Design">
+                <p>Beatiful Design</p>
+
+            </div>
+            <div class="feature-card">
+                <img src="" alt="Export to PDF">
+                <p>Export to PDF</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
