@@ -1,0 +1,50 @@
+.hero {
+    text-align: center;
+    margin-top: 25px
+}
+
+.hero h1 {
+    font-size: 55px;
+}
+
+.hero p {
+    margin-top: 25px;
+    font-size: 20px;
+    color: rgb(145, 145, 145);
+}
+
+.hero a {
+    margin-top: 25px;
+    display: inline-block;
+    background: #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 150px;
+    height: 60px;
+    align-items: center;
+    padding: 18px 10px;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    background: #1155e7;
+    color: aliceblue;
+}
+
+.features {
+    margin-top: 60px;
+    width:100%;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.feature-card {
+    width: 300px;
+    text-align: center;
+}
