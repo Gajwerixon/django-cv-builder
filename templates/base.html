@@ -3,8 +3,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> {% block title %} CV Builder {% endblock %} </title>
+        
+        <title> 
+            {% block title %} 
+                CV Builder 
+            {% endblock %} 
+        </title>
+
         <link rel="stylesheet" href="{% static "css/style.css" %}">
+            {% block extra_css %}
+
+            {% endblock %}
+        </head>
     </head>
 
     <body>
