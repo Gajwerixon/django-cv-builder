@@ -22,7 +22,7 @@ body {
 }
 
 .navbar .container {
-    height: 75px;
+    min-height: 75px;
 
     display: flex;
     justify-content: space-between;
@@ -45,6 +45,7 @@ body {
 .nav-links a {
     font-weight: 700;
     padding: 8px 18px;
+
     text-decoration: none;
 
     border-radius: 8px;
