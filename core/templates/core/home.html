@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block extra_css%}
+{% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
@@ -12,35 +12,54 @@
 
 {% block content %}
 
+<section class="hero">
 
-    <div class="hero">
+    <div class="container">
+
         <h1>
             Create your professional CV
         </h1>
 
         <p>
-            Create, customize, and download your professional CV in minutes.
+            Create, customize, and download your professional CV in minutes!
         </p>
 
-        <a href="#" class="btn-primary">Create CV</a>
+        <a href="#" class="btn-primary">
+            Create CV
+        </a>
+
     </div>
 
-    <section class="features">
+</section>
+
+
+<section class="features">
+
+    <div class="container">
+
         <div class="feature-grid">
+
             <div class="feature-card">
-                <img src="" alt="Easy to use">
+                <img src="{% static 'images/icons/easy-to-use.svg' %}" alt="Easy to use">
                 <p>Easy to Use</p>
             </div>
 
-            <div class="feature-card">
-                <img src="" alt="Beatiful Design">
-                <p>Beatiful Design</p>
 
-            </div>
             <div class="feature-card">
-                <img src="" alt="Export to PDF">
+                <img src="{% static 'images/icons/beautiful-design.svg' %}" alt="Beautiful Design">
+                <p>Beautiful Design</p>
+            </div>
+
+
+            <div class="feature-card">
+                <img src="{% static 'images/icons/export-pdf.svg' %}" alt="Export to PDF">
                 <p>Export to PDF</p>
             </div>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
+
 {% endblock %}
