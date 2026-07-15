@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
+    background-color: whitesmoke;
     color: #222;
 }
 
@@ -17,7 +17,6 @@ body {
 }
 
 .navbar {
-    background: white;
     border-bottom: 1px solid #ddd;
 }
 
