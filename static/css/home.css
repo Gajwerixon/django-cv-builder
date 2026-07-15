@@ -2,8 +2,7 @@
 
 .hero {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .hero h1 {
@@ -20,17 +19,15 @@
 
 .hero a {
     display: inline-block;
+    text-decoration: none;
 
     margin-top: 25px;
-
     padding: 16px 35px;
 
     background: #2563eb;
     color: white;
 
     border-radius: 8px;
-
-    text-decoration: none;
 
     font-size: 20px;
     font-weight: bold;
@@ -44,21 +41,18 @@
 /* Feature Section */
 
 .features {
-    padding: 50px 0;
-    background: white;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    padding: 60px 0;
+    border: 1px solid rgb(224, 222, 222);
 }
 
 .feature-grid {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .feature-card {
-    width: 320px;
-    padding: 30px;
+    width: 280px;
     text-align: center;
 }
 
@@ -74,12 +68,6 @@
 }
 
 /* How-it-works Section */
-
-/* Title */
-
-.how-it-works {
-    height: 500px;
-}
 
 .how-it-works-title {
     padding: 50px 0;
@@ -115,10 +103,9 @@
     gap: 120px;
 
     margin-bottom: 72px;
-    height: 400px;
 }
 
-.step-image,
+.video-placeholder,
 .step-content {
     flex: 1;
 }
@@ -150,4 +137,48 @@
 .step-content p {
     font-size: 16px;
     line-height: 25px;
+}
+
+/* FAQ */
+
+.faq {
+    padding: 40px 0;
+}
+
+.faq .faq-wrapper {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-size: 48px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.faq-item {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(234, 234, 234, 0.894);
+    border-top: 1px solid rgba(234, 234, 234, 0.894);
+}
+
+/* footer */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: rgb(26, 26, 26);
+}
+
+.rights {
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgb(195, 195, 195);
 }
