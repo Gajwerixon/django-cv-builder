@@ -19,14 +19,13 @@
 
     <body>
         <nav class="navbar">
-            <div class="container">
+            <div class="navbar-container">
                 <a href="/" class="logo">CV Builder</a>
 
                 <div class="nav-links">
-                    <a href="#" class="btn-primary">Login</a>
-                    <a href="#" class="btn-secondary">Get Started</a>
+                    <a href="{% url "login" %}" class="btn-primary">Login</a>
+                    <a href="{% url "register" %}" class="btn-secondary">Get Started</a>
                 </div>
-            
             </div>
         </nav>
 
