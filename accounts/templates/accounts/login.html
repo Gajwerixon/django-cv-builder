@@ -1,41 +1,57 @@
 {% extends "base.html" %}
 
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+
 {% block content %}
 
-<h1>Login</h1>
+<div class="login-page">
+
+    <div class="login-form-section">
+
+        <div class="logo-container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    Resume<span>Lab</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+
+            <h1>Login</h1>
+
+            <form method="POST" class="form-login">
+
+                {% csrf_token %}
+
+                <label>Username</label>
+                <input type="text" name="username">
+
+                <label>Password</label>
+                <input type="password" name="password">
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+    </div>
 
 
-<form method="POST">
+    <div class="login-image-section">
 
-    {% csrf_token %}
+        <div class="image-placeholder">
+            Image
+        </div>
 
+    </div>
 
-    <label>
-        Username
-    </label>
-
-    <input 
-        type="text"
-        name="username"
-    >
-
-
-    <label>
-        Password
-    </label>
-
-    <input 
-        type="password"
-        name="password"
-    >
-
-
-    <button type="submit">
-        Login
-    </button>
-
-
-</form>
-
+</div>
 
 {% endblock %}
