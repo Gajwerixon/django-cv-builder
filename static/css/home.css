@@ -1,3 +1,66 @@
+/* Navbar */
+
+.navbar-container {
+    min-height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.logo span {
+    color: #EE6352;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a {
+    font-weight: 700;
+    padding: 8px 18px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    color: #000000;
+    border-color: #000000;
+}
+
+.btn-primary:hover {
+    border-color: #6e6d6d;
+    color: #6e6d6d;
+}
+
+.btn-secondary {
+    background: #08B2E3;
+    border-color: #08B2E3;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #4ecdef;
+    border-color: #4ecdef;
+}
+
 /* Hero Section */
 
 .hero {
@@ -14,7 +77,7 @@
     margin-top: 25px;
 
     font-size: 20px;
-    color: rgb(145, 145, 145);
+    color: #564E58;
 }
 
 .hero a {
@@ -24,17 +87,19 @@
     margin-top: 25px;
     padding: 16px 35px;
 
-    background: #2563eb;
+    background: #08b2e3;
     color: white;
 
     border-radius: 8px;
 
     font-size: 20px;
     font-weight: bold;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .hero a:hover {
-    background: #1155e7;
+    background: #4ecdef;
     color: white;
 }
 
@@ -42,7 +107,6 @@
 
 .features {
     padding: 60px 0;
-    border: 1px solid rgb(224, 222, 222);
 }
 
 .feature-grid {
@@ -80,7 +144,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
-    color: #1155e7;
+    color: #08b2e3;
 }
 
 .how-it-works-title h2 {
@@ -160,4 +224,31 @@
     padding: 25px 0;
     border-bottom: 1px solid rgba(234, 234, 234, 0.894);
     border-top: 1px solid rgba(234, 234, 234, 0.894);
+}
+
+/* footer */
+
+.footer-container {
+    align-items: center;
+    padding: 0px 30px;
+    border: 1px solid #EFE9F4;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: rgb(26, 26, 26);
+}
+
+.rights {
+    text-align: center;
+    padding-bottom: 50px;
+    color: #564e58;
 }
