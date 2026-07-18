@@ -1,0 +1,141 @@
+/* Main */
+
+.account-page {
+    min-height: 100vh;
+    display: flex;
+}
+
+.form-section {
+    position: relative;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Logo */
+
+.logo-container {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo span {
+    color: #EE6352;
+}
+
+
+/* Login Content */
+
+.content {
+    width: 100%;
+    max-width: 400px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #564E58;
+}
+
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dcd6e1;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form input::placeholder {
+    color: #9ca3af;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #08B2E3;
+}
+
+.form button {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    background: #08B2E3;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.form button:hover {
+    background: #4ecdef;
+}
+
+
+/* Access Links */
+
+.access-links {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.access-links a {
+    text-decoration: none;
+    color: #08B2E3;
+}
+
+.access-links a:hover {
+    text-decoration: underline;
+    color: #08B2E3;
+}
+
+
+/* Image */
+
+.image-section {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e5e7eb;
+}
+
+.image-placeholder {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100%;
+}
