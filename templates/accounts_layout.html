@@ -1,0 +1,48 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+
+
+<div class="account-page">
+
+    <div class="form-section">
+
+        <div class="logo-container">
+            <a href="/" class="logo">
+                Resume<span>Lab</span>
+            </a>
+        </div>
+
+        <div class="content">
+
+            <h1 class="title">{% block title %}{% endblock %}</h1>
+            <p class="subtitle">{% block subtitle %}{% endblock %}</p>
+
+            <form method="POST" class="form">
+
+                {% csrf_token %}
+
+                {% block form %}{% endblock %}
+
+                <button type="submit">{% block button_text %}{% endblock %}</button>
+
+            </form>
+
+        </div>
+
+        <div class="access-links">
+            {% block access_links %}{% endblock %}
+        </div>
+
+    </div>
+
+
+    <div class="image-section">
+
+        <div class="image-placeholder">
+            Image
+        </div>
+
+    </div>
+
+</div>
