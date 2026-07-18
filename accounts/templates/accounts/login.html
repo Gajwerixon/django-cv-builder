@@ -1,57 +1,24 @@
-{% extends "base.html" %}
+{% extends "accounts_layout.html" %}
 
-{% load static %}
+{% block title %} Welcome back! {% endblock %}
+{% block subtitle %} Sign in and continue building your resume. {% endblock %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+{% block form %}
+
+    <input type="text" name="username" placeholder="Username">
+    
+    <input type="password" name="password" placeholder="Password">
+
 {% endblock %}
 
 
-{% block content %}
-
-<div class="login-page">
-
-    <div class="login-form-section">
-
-        <div class="logo-container">
-            <div class="logo">
-                <a href="/" class="logo">
-                    Resume<span>Lab</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="form-wrapper">
-
-            <h1>Login</h1>
-
-            <form method="POST" class="form-login">
-
-                {% csrf_token %}
-
-                <label>Username</label>
-                <input type="text" name="username">
-
-                <label>Password</label>
-                <input type="password" name="password">
-
-                <button type="submit">Login</button>
-
-            </form>
-
-        </div>
-
-    </div>
+{% block button_text %} Sign in {% endblock %}
 
 
-    <div class="login-image-section">
+{% block access_links %}
 
-        <div class="image-placeholder">
-            Image
-        </div>
-
-    </div>
-
-</div>
+    <p class="access-link">Forget Password?<a href="#"> Reset</a>
+    <p class="access-link">Don't have an account?<a href="{% url "register" %}"> Sign up</a>
 
 {% endblock %}
