@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # My apps
     'core',
     'accounts',
+    'dashboard',
 ]
 
 AUTH_USER_MODEL = "accounts.CustomUser"
