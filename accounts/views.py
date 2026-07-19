@@ -12,8 +12,12 @@ def register_view(request):
         form = RegisterForm(request.POST)
     
         if form.is_valid():
-            form.save()
-            return redirect('login')
+            
+            user = form.save()
+            login(request, user)
+
+            # Redirect to the dashboard after successful registration
+            return redirect("dashboard")
     
     else:
         form = RegisterForm()
@@ -43,6 +47,6 @@ def login_view(request):
 
         if user is not None:
             login(request, user)
-            return redirect('/')
+            return redirect('dashboard')
         
     return render(request, 'accounts/login.html')
