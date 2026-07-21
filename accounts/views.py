@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 
 from .forms import RegisterForm
 
@@ -50,3 +50,8 @@ def login_view(request):
             return redirect('dashboard')
         
     return render(request, 'accounts/login.html')
+
+
+def logout_view(request):
+    logout(request)
+    return redirect("/")
