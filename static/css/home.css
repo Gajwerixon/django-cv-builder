@@ -1,64 +1,49 @@
 /* Navbar */
 
-.navbar-container {
-    min-height: 75px;
+.navbar {
+    width: 100%;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 0 30px;
-    margin: 0 auto;
+
+    padding: 24px clamp(20px, 4vw, 48px);
+
+    background: var(--color-background);
 }
 
-.logo {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000000;
+.navbar-left {
+    justify-self: left;
 }
 
-.logo span {
-    color: #EE6352;
+.navbar-left button {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    background: none;
+    padding: 0;
+
+    cursor: pointer;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.navbar-center {
+    justify-self: center;
 }
 
-.nav-links a {
-    font-weight: 700;
-    padding: 8px 18px;
+.navbar-center button {
+    width: 56px;
+    height: 56px;
 
-    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
 
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 2px;
-
-    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.btn-primary {
-    color: #000000;
-    border-color: #000000;
-}
-
-.btn-primary:hover {
-    border-color: #6e6d6d;
-    color: #6e6d6d;
-}
-
-.btn-secondary {
-    background: #08B2E3;
-    border-color: #08B2E3;
-    color: #ffffff;
-}
-
-.btn-secondary:hover {
-    background: #4ecdef;
-    border-color: #4ecdef;
+.navbar-right {
+    justify-self: right;
 }
 
 /* Hero Section */
