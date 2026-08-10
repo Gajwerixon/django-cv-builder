@@ -10,7 +10,7 @@
     --color-primary-hover: #32bef6;
 
     --color-secondary: #007EA7;
-    --color-secondary-hover: #33a3c8;
+    --color-secondary-hover: #4db3d5;
 
     /* Text */
     --color-text-dark: #00171F;
@@ -18,6 +18,10 @@
 
     /* Background */
     --color-background: #FFFFFF;
+
+    /* Transition */
+    --transition-fast: 0.25 ease;
+    --transition-normal: 0.3s ease;
 }
 
 body {
