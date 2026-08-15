@@ -12,20 +12,18 @@
     /* Text */
     --color-text-dark: #000000;
     --color-text-light: #FFFFFF;
+    --color-text-second: hsl(222 30% 8%);
+    --color-text-third: hsl(220 8% 42%);
 
     /* Background */
     --color-background: #FFFFFF;
 
-    /* Transition */
-    --transition-fast: 0.25 ease;
-    --transition-normal: 0.3s ease;
-
     /* Navbar */
-    --navbar-height: 56px;
+    --navbar-height: 64px;
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Inter", sans-serif;
 
     min-height: 100vh;
 
