@@ -6,14 +6,11 @@
 
 :root {
     /* Colors */
-    --color-primary: #00A8E8;
-    --color-primary-hover: #32bef6;
-
-    --color-secondary: #007EA7;
-    --color-secondary-hover: #4db3d5;
+    --color-primary: rgb(27, 77, 255);
+    --color-primary-hover: rgb(0, 39, 179);
 
     /* Text */
-    --color-text-dark: #00171F;
+    --color-text-dark: #000000;
     --color-text-light: #FFFFFF;
 
     /* Background */
@@ -22,6 +19,9 @@
     /* Transition */
     --transition-fast: 0.25 ease;
     --transition-normal: 0.3s ease;
+
+    /* Navbar */
+    --navbar-height: 56px;
 }
 
 body {
