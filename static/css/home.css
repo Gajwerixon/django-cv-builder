@@ -1,51 +1,40 @@
 /* Navbar */
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
     width: 100%;
+    height: var(--navbar-height);
 
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+    background-color: var(--color-background);
 
-    padding: 24px clamp(20px, 4vw, 48px);
-
-    background: var(--color-background);
+    z-index: 1000;
 }
 
-.navbar-left {
-    justify-self: left;
-}
-
-.navbar-left button {
-    width: 36px;
-    height: 36px;
-
-    border: none;
-    background: none;
-    padding: 0;
-
-    cursor: pointer;
-}
-
-.navbar-center {
-    justify-self: center;
-}
-
-.navbar-center a {
-    width: 56px;
-    height: 56px;
+.navbar .container {
+    min-height: var(--navbar-height);
 
     display: flex;
-    border: none;
-    background: none;
-    padding: 0;
+    align-items: center;
+    justify-content: space-between;
 
-    cursor: pointer;
+    padding-inline: clamp(28px, 4vw, 48px);
+}
+
+.navbar-logo {
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.navbar-logo span {
+    color: var(--color-primary);
 }
 
 .navbar-right {
-    justify-self: right;
-
     display: flex;
     align-items: center;
     gap: clamp(16px, 2vw, 28px);
@@ -66,11 +55,11 @@
 
     cursor: pointer;
 
-    transition: var(--transition-fast);
+    transition: var(--transition-normal);
 }
 
 .navbar-social a:hover {
-    color: #b2b4b4;
+    color: #777777;
 }
 
 .navbar-social a svg {
@@ -85,97 +74,99 @@
 }
 
 .btn-type-one {
-    font-weight: 700;
     color: var(--color-text-dark);
     padding: 6px 8px;
     border-radius: 10px;
+    font-weight: 700;
+
+    transition: var(--transition-normal);
 }
 
 .btn-type-one:hover {
-    background-color: rgb(239, 236, 236);
+    color: #777777;
 }
 
 .btn-type-two {
+    font-weight: 700;
     background-color: var(--color-primary);
     color: var(--color-text-light);
     border-radius: 10px;
-    font-weight: 700;
     padding: 6px 14px;
+
+    transition: var(--transition-normal);
 }
 
 .btn-type-two:hover {
-    background-color: var(--color-secondary-hover);
+    background-color: var(--color-primary-hover);
 }
+
 
 /* Hero Section */
-
 .hero {
-    text-align: center;
-    padding: 50px 0;
+    width: calc(100% - 40px);
+    margin: calc(var(--navbar-height) + 10px) 20px 20px;
+
+    padding: 48px clamp(20px, 4vw, 48px);
+    border-radius: 24px;
+
+    background: radial-gradient(
+        circle at center,
+        #dce8ff 0%,
+        #edf3ff 35%,
+        #f5f8ff 65%,
+        #d9e5ff 100%
+    );
 }
 
-.hero h1 {
-    font-size: 55px;
-    font-weight: 700;
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(30px, 5vw, 80px);
 }
 
-.hero p {
-    margin-top: 25px;
-
-    font-size: 20px;
-    color: #564E58;
-}
-
-.hero a {
-    display: inline-block;
-    text-decoration: none;
-
-    margin-top: 25px;
-    padding: 16px 35px;
-
-    background: #08b2e3;
-    color: white;
-
-    border-radius: 8px;
-
-    font-size: 20px;
-    font-weight: bold;
-
-    transition: all 0.2s ease-in-out;
-}
-
-.hero a:hover {
-    background: #4ecdef;
-    color: white;
-}
-
-/* Feature Section */
-
-.features {
-    padding: 60px 0;
-}
-
-.feature-grid {
+.left-hero {
+    flex: 1;
     display: flex;
     justify-content: center;
-    gap: 30px;
 }
 
-.feature-card {
-    width: 280px;
-    text-align: center;
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 5vw, 20px);
+    align-items: top;
+    color: var(--color-text-light);
+
+    padding: 36px;
 }
 
-.feature-card img {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 15px;
+.feature {
+    display: flex;
+    gap: clamp(10px, 5vw, 20px);
+
+    align-items: center;
 }
 
-.feature-card p {
-    font-weight: bold;
-    font-size: 25px;
+.feature-img img {
+    width: 240px;
+    height: 120px;
+    object-fit: contain;
 }
+
+.feature-img-2 img {
+    width: 320px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.right-hero {
+    flex: 1;
+    font-size: clamp(20px, 2vw, 32px);
+    line-height: 1.2;
+}
+
+
 
 /* How-it-works Section */
 
