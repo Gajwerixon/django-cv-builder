@@ -1,41 +1,191 @@
 # Django CV Builder
 
-A web application for creating professional resumes easily and quickly.
+A modern web application for creating professional resumes easily and quickly.
 
-CV Builder allows users to create, customize, and download their resumes using a simple and intuitive interface. The project focuses on building a modern resume creation experience with clean design and responsive layout.
+CV Builder allows users to create, customize, and download their resumes using a simple and intuitive interface. The project focuses on building a clean resume creation experience with modern design, responsive layouts, and a straightforward user experience.
 
 ## Features
 
-- Create a professional CV step by step
-- Choose from different resume templates
-- Customize resume sections
-- Add personal information, experience, education, and skills
-- Export resumes as PDF files
-- Responsive design for different screen sizes
+* Create a professional CV step by step
+* Choose from different resume templates
+* Customize resume sections
+* Add personal information, experience, education, and skills
+* Export resumes as PDF files
+* Responsive design for different screen sizes
 
 ## Technologies
 
 The project is built with:
 
-- Python
-- Django
-- HTML5
-- CSS3
-- SQLite
-- Git
+* Python
+* Django
+* HTML5
+* CSS3
+* JavaScript
+* SQLite
+* Git
+
+## Project Structure
+
+The application is being developed in several stages:
+
+### 1. Home Page
+
+**Design**
+
+- [X] Navbar
+- [X] Hero
+- [ ] Testimonials
+- [ ] How It Works
+- [ ] FAQ
+- [ ] Footer
+- [ ] Responsive Design
+
+**Polish**
+- [ ] Animations
+- [ ] Accessibility
+
+### 2. Authentication
+
+**Design**
+
+* [X] Login page
+* [X] Register page
+* [ ] Password reset page
+* [ ] Password reset confirmation
+* [ ] Responsive authentication layout
+* [ ] Form validation and error states
+
+**Functionality**
+
+* [X] Create account
+* [X] Login
+* [X] Logout
+* [X] User authentication
+* [ ] Password reset
+* [ ] Password change
+
+### 3. Dashboard
+
+**Design**
+
+* [ ] Dashboard layout
+* [ ] Navigation
+* [ ] User profile section
+* [ ] My Resumes section
+* [ ] Resume cards
+* [ ] Account settings
+* [ ] Responsive dashboard
+
+**Functionality**
+
+* [ ] Display user's resumes
+* [ ] Create new resume
+* [ ] Edit resume
+* [ ] Delete resume
+* [ ] Duplicate resume
+* [ ] Display last modified date
+
+### 4. CV Builder
+
+**Design**
+
+* [ ] Builder layout
+* [ ] Resume editor
+* [ ] Resume preview
+* [ ] Section navigation
+* [ ] Responsive builder layout
+
+**Resume Sections**
+
+* [ ] Personal information
+* [ ] Profile / Summary
+* [ ] Work experience
+* [ ] Education
+* [ ] Skills
+* [ ] Languages
+* [ ] Projects
+* [ ] Certifications
+* [ ] Additional information
+
+**Functionality**
+
+* [ ] Add sections
+* [ ] Edit sections
+* [ ] Remove sections
+* [ ] Reorder sections
+* [ ] Add multiple experiences
+* [ ] Add multiple education entries
+* [ ] Add multiple skills
+* [ ] Auto-save
+* [ ] Live resume preview
+
+### 5. Resume Templates
+
+**Design**
+
+* [ ] Template 1
+* [ ] Template 2
+* [ ] Template 3
+* [ ] Template previews
+* [ ] Template selection
+* [ ] Responsive templates
+
+**Functionality**
+
+* [ ] Change template
+* [ ] Save selected template
+* [ ] Apply template to existing resumes
+
+### 6. PDF Export
+
+* [ ] Prepare resume for printing
+* [ ] PDF layout
+* [ ] Page breaks
+* [ ] Font handling
+* [ ] Margins
+* [ ] Multiple-page resumes
+* [ ] Download PDF
+
+### 7. Testing & Polish
+
+* [ ] Responsive testing
+* [ ] Browser testing
+* [ ] Accessibility improvements
+* [ ] Form validation
+* [ ] Error handling
+* [ ] Loading states
+* [ ] Empty states
+* [ ] 404 page
+* [ ] 500 page
+* [ ] Security review
+* [ ] Clean up CSS
+* [ ] Clean up Django code
+* [ ] Remove unused code
+* [ ] Optimize assets
 
 ## Purpose
 
-This project was created as a learning project to improve my Django, frontend development, and web application design skills.
+This project was created as a learning project to improve my skills in:
 
-## Licenses and Attributions
+* Django and backend development
+* Frontend development
+* Responsive web design
+* Database management
+* User authentication
+* PDF generation
+* Building and structuring a complete web application
 
-This project uses icons from [Tabler Icons](https://tabler.io/icons), which are licensed under the MIT License.
+## Current Status
 
-Copyright (c) 2018-2025 The Tabler Authors
+The project is currently under active development.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+The initial focus is on building the **Home Page and its responsive design**, followed by the authentication system and dashboard.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## Future Plans
 
-The Software is provided "AS IS", without warranty of any kind.
+The long-term goal is to turn the project into a complete CV creation platform where users can quickly build, customize, manage, and export professional resumes.
+
+## License
+
+This project is created for educational and portfolio purposes.
