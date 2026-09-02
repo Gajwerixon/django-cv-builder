@@ -35,7 +35,7 @@ The application is being developed in several stages:
 
 - [X] Navbar
 - [X] Hero
-- [ ] Testimonials
+- [ ] Trusted By
 - [ ] How It Works
 - [ ] FAQ
 - [ ] Footer
