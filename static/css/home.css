@@ -106,6 +106,7 @@
 
 
 /* Hero Section */
+
 .hero {
     width: calc(100% - 40px);
     margin: calc(var(--navbar-height) + 10px) 20px 20px;
@@ -216,6 +217,58 @@
     transform: translateX(6px);
 }
 
+
+/* Trusted-by Section  */
+
+.trusted-by {
+    overflow: hidden;
+    padding: 24px 0;
+}
+
+.trusted-by-title {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--color-text-third);
+}
+
+.trusted-by-track {
+    display: flex;
+    width: max-content;
+    animation: trusted-by-scroll 40s linear infinite;
+}
+
+.trusted-by-group {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-right: 80px;
+    flex-shrink: 0;
+}
+
+.trusted-by-group span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--color-text-dark);
+}
+
+.trusted-by-group img {
+    width: 120px;
+    height: 32px;
+    object-fit: contain;
+
+    filter: brightness(0);
+}
+
+@keyframes trusted-by-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-20%);
+    }
+}
 
 /* How-it-works Section */
 
