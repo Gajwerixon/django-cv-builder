@@ -36,7 +36,7 @@ The application is being developed in several stages:
 - [X] Navbar
 - [X] Hero
 - [X] Trusted By
-- [ ] How It Works
+- [X] How It Works
 - [ ] FAQ
 - [ ] Footer
 - [ ] Responsive Design
