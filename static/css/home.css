@@ -126,7 +126,6 @@
 .hero .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     flex-direction: column;
     gap: clamp(12px, 2vw, 24px);
@@ -153,7 +152,6 @@
     position: absolute;
 
     left: -4%;
-    right: -4%;
     bottom: 15%;
 
     width: 106%;
@@ -222,7 +220,7 @@
 
 .trusted-by {
     overflow: hidden;
-    padding: 16px 0;
+    padding: 24px 0;
 
     mask-image: linear-gradient(
         to right,
@@ -305,77 +303,82 @@
     }
 }
 
-/* How-it-works Section */
 
-.how-it-works-title {
-    padding: 50px 0;
+/* How It Works */
+
+.how-it-works {
+    margin: clamp(32px, 8vw, 48px) auto;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.section-header {
     text-align: center;
 }
 
-.how-it-works-title span {
-    display: block;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    color: #08b2e3;
+.section-label {
+    display: inline-block;
+
+    padding: 8px 12px;
+    border-radius: 16px;
+    border: 2px #ebe6e6 solid;
+
+    font-size: clamp(0.6rem, 4vw, 1rem);
+    font-weight: 700;
 }
 
-.how-it-works-title h2 {
-    width: 500px;
-    margin: 0 auto;
-    font-size: 30px;
+.section-title {
+    margin: 16px auto;
+    max-width: 800px;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+
+    color: var(--color-text-dark);
 }
 
-/* Steps */
 
-.steps-container {
-    margin-top: 40px;
-    max-width: 1080px;
+/* Content */
+
+.how-it-works-content {
+    margin-top: clamp(16px, 5vw, 32px);
+    padding: clamp(8px, 4vw, 16px);
+}
+
+.steps {
+    display: flex;
+    gap: 64px;
 }
 
 .step {
     display: flex;
-    justify-content: space-between;
-
-    gap: 120px;
-
-    margin-bottom: 72px;
-}
-
-.video-placeholder,
-.step-content {
+    flex-direction: column;
+    gap: 24px;
     flex: 1;
+    min-width: 0;
 }
 
-.video-placeholder {
-    height: 360px;
-    width: 540px;
-    background: #ddd;
+.step-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
     border-radius: 12px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.step-content {
-    max-width: 450px;
+.step-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
-.step-reverse {
-    flex-direction: row-reverse;
+.step-description {
+    max-width: 380px;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
 }
 
-.step-content h3 {
-    font-size: 40px;
-    margin-bottom: 16px;
-}
-
-.step-content p {
-    font-size: 16px;
-    line-height: 25px;
-}
 
 /* FAQ */
 
