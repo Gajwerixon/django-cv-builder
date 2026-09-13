@@ -404,7 +404,7 @@
 .gallery-track {
     display: flex;
     gap: 20px;
-    transform: translateX(-145px);
+    transform: translateX(-415px);
     transition: transform 0.4s ease;
 }
 
@@ -416,6 +416,12 @@
     border: 1px solid gray;
     text-align: center;
     justify-content: center;
+}
+
+.cv.active {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--color-primary);
+    border-width: 4px;
 }
 
 
